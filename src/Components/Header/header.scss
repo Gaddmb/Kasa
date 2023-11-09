@@ -1,34 +1,26 @@
 @import "../../sass/index.scss";
 
 header {
-    @include flex;
-    width: 1240px;
-    height: 68px;
-    gap: 720.678px;
-    
-    a {
+  @include flex;
+  width: 100%;
+  height: 68px;
+  gap: 720.678px;
+
+  a {
     color: $color-red;
     text-align: right;
     font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
     font-weight: 500;
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: border-color 1s;
-    }
+  }
 
-    a:hover {
-        border-bottom: 3px solid $color-red
-    }
-
-    ul {
+  ul {
     display: flex;
     align-items: flex-start;
     gap: 57px;
-    }
+  }
+  @media screen and (max-width: 768px) {
+  }
 }
-
-
-
-

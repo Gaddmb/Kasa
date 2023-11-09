@@ -1,29 +1,34 @@
 @import "../../sass/index.scss";
 
-.notFound{
-    width: 100%;
-    color: $color-red;
-     
-    &_error{
-        @include flex_2nd;
-       
-        &_title{
-            font-weight: 700;
-            font-size: 288px;            
-        }
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-        &_text{
-            font-size: 36px;
-            font-weight: 500;
-            text-align: center;
-              
-        }
+.notFound {
+  width: 100%;
+  color: $color-red;
 
-        &_back{
-            @include flex_2nd;
-            font-size: 18px;
-            font-weight: 500;
-                     
-        }
+  &_error {
+    @include flex_2nd;
+
+    &_title {
+      font-weight: 700;
+      font-size: 288px;
     }
+
+    &_text {
+      font-size: 36px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &_back {
+      @include flex_2nd;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
 }

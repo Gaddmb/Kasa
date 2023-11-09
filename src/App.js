@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Index";
 import About from "./Pages/about/Index";
 import Accommodation from "./Pages/accommodation/Index";
-import NotFound from "./Pages/notFound/Index";
 import Header from "./Components/Header/index";
 import Footer from "./Components/Footer/index";
+import NotFound from "./Pages/notFound/Index";
 
 function App() {
   return (
