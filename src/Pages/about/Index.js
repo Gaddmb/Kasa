@@ -6,7 +6,7 @@ import AboutData from "./AboutData"; // j'importe mes données
 
 const index = () => {
   return (
-    <>
+    <div className="about">
       <Banner />
       <main className="about_main">
         {/* je parcours mes données grace a la fonction map  */}
@@ -19,7 +19,7 @@ const index = () => {
           );
         })}
       </main>
-    </>
+    </div>
   );
 };
 

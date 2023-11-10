@@ -1,7 +1,13 @@
 @import "../../sass/index.scss";
 
-.about_main{
+.about {
+  margin-top: 50px;
+
+  .about_main {
     display: flex;
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
+    gap: 30px;
+    margin: 5%;
+  }
 }

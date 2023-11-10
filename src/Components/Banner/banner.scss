@@ -6,13 +6,11 @@
   align-items: center;
   border-radius: 25px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../../assets/image/IMG.png");
+    url("../../assets/image/banner.png");
   background-position: center;
   background-size: cover;
   height: 223px;
-  padding: 20px;
   width: 100%;
-  margin: 43px auto;
 
   p {
     color: $color-white;

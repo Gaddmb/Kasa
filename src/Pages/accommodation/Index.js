@@ -97,8 +97,16 @@ const Logement = () => {
         </div>
       </div>
       <div className="logement-collapse">
-        <Collapse title={`Description`} content={logement.description} />
-        <Collapse title={`Equipements`} content={logement.equipments} />
+        <Collapse
+          className="collapse"
+          title={`Description`}
+          content={logement.description}
+        />
+        <Collapse
+          className="collapse"
+          title={`Equipements`}
+          content={logement.equipments}
+        />
       </div>
     </section>
   );

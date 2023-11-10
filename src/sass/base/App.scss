@@ -1,27 +1,11 @@
 @import "./normalize.scss";
 @import "../../sass/index.scss";
 
-.App {
-  text-align: center;
-}
-
-*,
-::before,
-::after {
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat";
-  font-style: normal;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-li {
-  list-style: none;
 }
 
 body {
@@ -32,6 +16,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
 }
