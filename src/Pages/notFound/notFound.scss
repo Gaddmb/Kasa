@@ -28,4 +28,28 @@
       margin-top: 10%;
     }
   }
+  // Ajout de styles spécifiques pour les écrans de petite taille
+  @media screen and (max-width: 412px) {
+    &_error {
+      flex-direction: column; // Affichage en colonne pour les éléments NotFound sur les petits écrans
+
+      &_title {
+        font-size: 198px; // Réduire la taille de la police pour le titre sur les petits écrans
+        height: 99px;
+        margin-bottom: 45%;
+        margin-top: 20%;
+      }
+
+      &_text {
+        font-size: 18px; // Réduire la taille de la police pour le texte sur les petits écrans
+        margin-top: 3%; // Ajuster l'espacement en haut pour le texte sur les petits écrans
+      }
+
+      &_back {
+        margin-top: 25%; // Ajuster l'espacement en haut pour le lien de retour sur les petits écrans
+        margin-bottom: 20%;
+        font-size: 14px;
+      }
+    }
+  }
 }
