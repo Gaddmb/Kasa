@@ -3,6 +3,7 @@ import "./about.scss";
 import Banner from "../../Components/Banner";
 import Collapse from "../../Components/Collapse";
 import AboutData from "./AboutData"; // j'importe mes données
+import arrowUpImage from "../../assets/image/arrow-up.png";
 
 const index = () => {
   return (
@@ -15,6 +16,11 @@ const index = () => {
             // je fais key=data.id pour rendre unique chaque element
             <div className="about_main_collapse" key={data.id}>
               <Collapse title={data.title} content={data.content} />
+              <img
+                src={arrowUpImage}
+                alt="Arrow Up"
+                className="arrow-up-image"
+              />
             </div>
           );
         })}

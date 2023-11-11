@@ -5,8 +5,7 @@ import "./accommodation.scss";
 import { useParams } from "react-router";
 import Carrousel from "../../Components/Carrousel/index";
 import Collapse from "../../Components/Collapse/index";
-import StarFull from "../../assets/image/etoilePleine.png";
-import StarEmpty from "../../assets/image/etoileVide.png";
+import StarRating from "../../Components/stars/index";
 import NotFound from "../notFound/Index";
 
 const Logement = () => {
@@ -16,10 +15,7 @@ const Logement = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // je chercher le logement qui correspond id
     const foundLogement = data.find((log) => log.id === id);
-
-    // fonction pour simuler le chargement
 
     setTimeout(() => {
       setLogement(foundLogement);
@@ -27,7 +23,6 @@ const Logement = () => {
     }, 1300);
   }, [id]);
 
-  // j'affiche chargement si le elle est en cours
   if (loading) {
     return (
       <div className="loader-container">
@@ -36,37 +31,12 @@ const Logement = () => {
     );
   }
 
-  // sinon ca affiche la page NotFound
-
   if (!logement) {
     return (
       <div>
         <NotFound />
       </div>
     );
-  }
-
-  //pour generer les etoiles de notations
-  function generateStarRating(rating) {
-    const starArray = [];
-
-    // je crée une boucle qui depend de la note
-    for (let i = 1; i <= 5; i++) {
-      if (i <= rating) {
-        starArray.push(
-          <i key={i} className="starFull">
-            <img src={StarFull} alt="étoile pleine" />
-          </i>
-        );
-      } else {
-        starArray.push(
-          <i key={i} className="starEmpty">
-            <img src={StarEmpty} alt="étoile vide" />
-          </i>
-        );
-      }
-    }
-    return starArray;
   }
 
   return (
@@ -92,7 +62,7 @@ const Logement = () => {
             <img src={logement.host.picture} alt={logement.host.name} />
           </div>
           <div className="logement-rating">
-            <span>{generateStarRating(logement.rating)}</span>
+            <StarRating rating={logement.rating} />
           </div>
         </div>
       </div>

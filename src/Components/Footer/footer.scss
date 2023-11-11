@@ -15,4 +15,16 @@
   &_copyright {
     color: $color-white;
   }
+
+  @media screen and (max-width: 412px) {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+
+    img {
+      width: 150px;
+      margin-bottom: 15px;
+    }
+  }
 }

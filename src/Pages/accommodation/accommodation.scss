@@ -83,11 +83,6 @@ $color-2: white;
       justify-content: center;
       margin: 20px 0;
     }
-
-    .starFull img,
-    .starEmpty img {
-      width: 15%;
-    }
   }
 
   .loader-container {
@@ -106,6 +101,36 @@ $color-2: white;
     color: black;
     font-size: 30px;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 412px) {
+    .logement-collapse {
+      flex-direction: column; /* Affichage en colonne pour les collapses sur les petits écrans */
+    }
+
+    .collapse {
+      width: 100%; /* La largeur de chaque collapse occupe la largeur totale sur les petits écrans */
+      margin-bottom: 20px; /* Ajoutez une marge en bas pour l'espacement entre les collapses */
+    }
+
+    .hebergement-container {
+      flex-direction: row; /* Affichage en colonne pour les éléments de l'hébergement sur les petits écrans */
+
+      .logement-host {
+        margin-bottom: 20px; /* Ajoutez une marge en bas pour l'espacement entre l'hôte et la note */
+      }
+    }
+    .logement-hostRating {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    .hebergement-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }
 

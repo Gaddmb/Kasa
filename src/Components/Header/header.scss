@@ -4,7 +4,7 @@ header {
   @include flex;
   width: 100%;
   height: 68px;
-  gap: 720.678px;
+  gap: 20px; // Ajustez la valeur de gap pour les petits écrans
 
   a {
     color: $color-red;
@@ -20,8 +20,22 @@ header {
   ul {
     display: flex;
     align-items: flex-start;
-    gap: 57px;
+    gap: 20px;
   }
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 412px) {
+    height: auto;
+    padding: 10px;
+    flex-direction: row;
+
+    a {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    ul {
+      flex-direction: row;
+      gap: 10px;
+    }
   }
 }

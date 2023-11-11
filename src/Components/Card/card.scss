@@ -24,13 +24,15 @@
     left: 20px;
     color: $color-white;
   }
-  @media screen and (max-width: 375px) {
-    width: 100%;
-    height: 255px;
-  }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 412px) {
     width: 100%;
     height: 255px;
+
+    h3 {
+      font-size: 18px;
+      bottom: 10px;
+      top: auto;
+    }
   }
 }
