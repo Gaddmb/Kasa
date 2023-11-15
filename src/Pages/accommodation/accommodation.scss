@@ -103,7 +103,7 @@ $color-2: white;
     text-transform: uppercase;
   }
 
-  @media screen and (max-width: 412px) {
+  @media screen and (max-width: 672px) {
     .logement-collapse {
       flex-direction: column; /* Affichage en colonne pour les collapses sur les petits écrans */
     }
@@ -130,6 +130,18 @@ $color-2: white;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 467px) {
+    .logement-tags li {
+      margin: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .logement-tags li {
+      padding: 3px;
     }
   }
 }
