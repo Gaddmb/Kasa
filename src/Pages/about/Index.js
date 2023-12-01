@@ -3,7 +3,7 @@ import "./about.scss";
 import Banner from "../../Components/Banner";
 import Collapse from "../../Components/Collapse";
 import AboutData from "./AboutData"; // j'importe mes données
-import arrowUpImage from "../../assets/image/arrow-up.png";
+import arrowUpImage from "../../assets/image/arrow.png";
 
 const index = () => {
   return (
