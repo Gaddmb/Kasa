@@ -18,10 +18,14 @@
     padding: 10px 15px;
     cursor: pointer;
     margin: 0;
-
-    .arrow-up-image {
-      width: 32px;
-      height: 32px;
+    .arrow {
+      transition: all 0.2s ease-in-out;
+      .arrow-up {
+        transform: rotate(0deg);
+      }
+      .arrow-down {
+        transform: rotate(180deg);
+      }
     }
   }
 
