@@ -47,20 +47,14 @@
     height: 0;
   }
 
-  // Ajoutez les styles spécifiques pour les écrans de petite taille
   @media screen and (max-width: 412px) {
     &_title {
-      font-size: 24px; // Ajustez la taille du titre pour les petits écrans
-    }
-
-    .arrow-up-image {
-      width: 24px; // Ajustez la taille de l'icône de flèche pour les petits écrans
-      height: 24px;
+      font-size: 24px;
     }
 
     &_content {
-      font-size: 18px; // Ajustez la taille du contenu pour les petits écrans
-      margin-bottom: 20px; // Ajoutez une marge en bas pour l'espacement
+      font-size: 18px;
+      margin-bottom: 20px;
     }
   }
 }
