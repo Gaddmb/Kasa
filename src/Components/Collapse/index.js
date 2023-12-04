@@ -12,7 +12,7 @@ const Collapse = ({ title, content }) => {
         <h3 className="collapse_title" onClick={() => setToggle(!toggle)}>
           {title}
           <img
-            className={toggle ? "arrow arrow-up" : "arrow arrow-down"}
+            className={toggle ? "arrow arrow-down" : "arrow arrow-up"}
             src={arrow}
             alt="show content"
           />

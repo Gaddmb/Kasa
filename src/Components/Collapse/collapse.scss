@@ -19,11 +19,12 @@
     cursor: pointer;
     margin: 0;
     .arrow {
-      transition: all 0.2s ease-in-out;
-      .arrow-up {
+      transition: all 0.2s;
+
+      &.arrow-up {
         transform: rotate(0deg);
       }
-      .arrow-down {
+      &.arrow-down {
         transform: rotate(180deg);
       }
     }
