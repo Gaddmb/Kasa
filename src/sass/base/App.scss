@@ -26,3 +26,9 @@ a {
 li {
   list-style: none;
 }
+
+@media screen and (max-width: 672px) {
+  body {
+    margin: 0 15px;
+  }
+}

@@ -9,11 +9,15 @@ import StarRating from "../../Components/stars/index";
 import NotFound from "../notFound/Index";
 
 const Logement = () => {
+  // j'extrait les paramtre de l'url
   const { id } = useParams();
+
+  // je declare 2 etat 1 pour stocke et 2 pour le chargement
 
   const [logement, setLogement] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // je recherche le logement correspondant a l'identififant
   useEffect(() => {
     const foundLogement = data.find((log) => log.id === id);
 

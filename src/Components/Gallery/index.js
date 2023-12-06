@@ -1,5 +1,5 @@
 import React from "react"; // j'import react pour crée les composant react
-import "./gallery.scss"; // j'import mon scss pour le style
+import "./gallery.scss";
 import data from "../../data/data.json"; // j'import mes données depuis le fichier data.json
 import Card from "../Card/index"; // j'import card pour afficher les elements dans ma galerie
 

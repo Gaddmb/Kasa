@@ -4,8 +4,9 @@ import ArrowRight from "../../assets/image/arrow_right.png";
 import ArrowLeft from "../../assets/image/arrow_left.png";
 
 const Carrousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0); // je gere l'etat
+  const [currentIndex, setCurrentIndex] = useState(0); // je gere l'etat avec un hook
 
+  // fonction
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -40,6 +41,12 @@ const Carrousel = ({ images }) => {
             <img src={ArrowRight} alt="arrowRight" />
           </button>
         </div>
+
+        {/* j'affiche une indication du numéro de la diapositive actuelle
+         par rapport au nombre total de diapositives dans le carrousel */}
+        <p className="slideCount">
+          {currentIndex + 1} / {images.length}
+        </p>
       </div>
     </>
   );

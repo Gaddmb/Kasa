@@ -21,34 +21,52 @@
       }
     }
   }
-}
 
-.carrousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 24px;
-  cursor: pointer;
+  .carrousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
 
-  &.prev {
-    left: 0;
+    &.prev {
+      left: 0;
+    }
+
+    &.next {
+      right: 0;
+    }
+
+    @media screen and (max-width: 672px) {
+      height: 54px;
+      img {
+        width: 50%;
+      }
+
+      .carousel-item img {
+        height: 90%;
+      }
+    }
   }
 
-  &.next {
-    right: 0;
+  .numberSlide {
+    position: absolute;
+    right: 50%;
+    bottom: 30%;
+    color: $color-white;
   }
-  @media screen and (max-width: 672px) {
-    height: 54px;
-  }
-}
 
-.numberSlide {
-  position: absolute;
-  right: 50%;
-  bottom: 30%;
-  color: $color-white;
+  .slideCount {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-white;
+    font-weight: 500;
+    font-size: clamp(14px, 2vw, 18px);
+  }
 }
